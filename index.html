@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+
+<body class="page-1">
+    <!-- Slider main container -->
+    <!-- <div class="preloader">
+        <img src="./assets/loader.gif" alt="">
+    </div> -->
+    <header>
+        <nav class="flex">
+            <a href="#" class="logo">
+                <img src="./assets/logo1.png" alt="">
+            </a>
+            <label for="bar"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="bar">
+            <ul class="menu flex">
+                <li>
+                    <a href="#">Accueil</a>
+                </li>
+                <li>
+                    <a href="./realisation.html">Nos réalisations</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <!-- <div class="slogan">
+            <h1>Marihanna fashion !</h1>
+            <p>Courronez la mode avec la nouvelle tendance</p>
+        </div> -->
+            <div class="swiper-container swiper1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./assets/banner/1.jpg" alt="">
+                        <div class="slogan slogan-1">
+                            <h1 class="header-title">Notre collection pour cet été</h1>
+                            <a class="btn btn-header">voir plus</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img src="./assets/banner/2.png" alt="">
+                        <div class="slogan slogan-2">
+                            <h1 class="header-title">Le style au top niveau</h1>
+                            <a class="btn btn-header">voir plus</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img src="./assets/banner/3.png" alt="">
+                        <div class="slogan slogan-3">
+                            <h1 class="header-title">Nous vous offrons le meilleur du fashion</h1>
+                            <a class="btn btn-header">voir plus</a></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination1"></div>
+
+                <div class="swiper-button-prev swiper-button-prev1"></div>
+                <div class="swiper-button-next swiper-button-next1"></div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></div>
+        <section id="about">
+            <div class="bloc bloc1" data="femme" onclick="openModal()"><img src="./assets/gallerie/women/33.jpg" alt=""></div>
+            <div class="text">
+                <h1>Qui sommes-nous</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias necessitatibus, veniam distinctio ducimus officiis dolore expedita dolorem adipisci assumenda! Culpa praesentium dicta perspiciatis. Esse dolore optio sit, placeat asperiores perspiciatis?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia incidunt voluptatem temporibus et illo illum ut earum obcaecati hic perferendis non doloribus, iste, adipisci itaque dolorem accusamus voluptatum laborum dolore! Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Iste, similique?<br>
+                <a href="./contact.html" class="btn">Contactez-nous</a>
+            </div>
+        </section>
+        <section id="arrivage">
+            <h1>Nos arrivages</h1>
+            <div class="container">
+                <div class="bloc bloc1" data="femme" onclick="openModal()"><img src="./assets/gallerie/women/50.jpg" alt=""></div>
+                <div class="bloc bloc2" data="femme" onclick="openModal()"><img src="./assets/gallerie/women/47.jpg" alt=""></div>
+                <div class="bloc bloc3" data="femme" onclick="openModal()"><img src="./assets/gallerie/women/57.png" alt=""></div>
+                <div class="bloc bloc4" data="femme" onclick="openModal()"><img src="./assets/gallerie/child/22.jpg" alt=""></div>
+                <div class="bloc bloc5" data="femme" onclick="openModal()"><img src="./assets/gallerie/child/23.jpg" alt=""></div>
+                <div class="bloc bloc6" data="femme" onclick="openModal()"><img src="./assets/gallerie/men/16.jpg" alt=""></div>
+            </div>
+        </section>
+        <section id="collection">
+            <h1>Nos collections</h1>
+            <div class="container">
+                <div class="bloc bloc1" data="femme" onclick="openModal('./assets/gallerie/child/1.jpg')"><img src="./assets/gallerie/child/1.jpg" alt="">
+                    <p class="info">Enfant</p>
+                </div>
+                <div class="bloc bloc2" data="femme" onclick="openModal('./assets/gallerie/men/2.jpg')"><img src="./assets/gallerie/men/2.jpg" alt="">
+                    <p class="info">Homme</p>
+                </div>
+                <div class="bloc bloc3" data="femme" onclick="openModal('./assets/gallerie/women/7.jpg')"><img src="./assets/gallerie/women/7.jpg" alt="">
+                    <p class="info">Femme</p>
+                </div>
+                <!-- <div class="bloc bloc4" data="femme" onclick="openModal()"><img src="./assets/gallerie/women/6.jpg" alt="">
+                    <p class="info">Garcon</p>
+                </div> -->
+        </section>
+        <section id="realisation">
+            <h1>Galerie photos</h1>
+            <div class="container">
+                <div class="swiper-container swiper2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./assets/gallerie/women/14.jpg" alt=" "></div>
+                        <div class="swiper-slide"><img src="./assets/gallerie/women/15.jpg" alt=" "></div>
+                        <div class="swiper-slide"><img src="./assets/gallerie/women/16.jpg" alt=" "></div>
+                        <div class="swiper-slide"><img src="./assets/gallerie/women/19.jpg" alt=" "></div>
+                        <div class="swiper-slide"><img src="./assets/gallerie/women/20.jpg" alt=" "></div>
+                        <div class="swiper-slide"><img src="./assets/gallerie/women/21.jpg" alt=" "></div>
+                        <div class="swiper-slide"><img src="./assets/gallerie/women/22.jpg" alt=" "></div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination2"></div>
+
+                    <div class="swiper-button-prev swiper-button-prev2"></div>
+                    <div class="swiper-button-next swiper-button-next2"></div>
+                </div>
+                <div class="text-realisation">
+                    <h2>Nos réalisations en image !</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi repellat impedit praesentium amet adipisci mollitia quam architecto, officia ex quas molestiae voluptas? Deleniti sequi repellendus veritatis quibusdam quaerat nihil!
+                    </p><br>
+                    <a href="./realisation.html" class="btn">Voir toutes nos realisations</a>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="contact">
+            <h1>Contactez-nous</h1>
+            <div class="container">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Nom">
+                    <input type="tel" placeholder="Telephone">
+                    <textarea name="msg" id="msg" placeholder="Votre message..." cols="30" rows="10"></textarea>
+                    <a href="#" class="btn">Envoyer</a>
+                </form>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15438.09963123772!2d-17.45896027335761!3d14.682882293042978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1725f3676fa21%3A0x147bc7f1291d491!2zTcOpZGluYSwgRGFrYXIsIFPDqW7DqWdhbA!5e0!3m2!1sfr!2sma!4v1647424541390!5m2!1sfr!2sma"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        </section> -->
+        <!-- <section id="marque">
+            <div>
+                <img src="./assets/gallerie/marque/1.png" alt=" ">
+            </div>
+            <div>
+                <img src="./assets/gallerie/marque/2.png" alt=" ">
+            </div>
+            <div>
+                <img src="./assets/gallerie/marque/3.png" alt=" ">
+            </div>
+            <div>
+                <img src="./assets/gallerie/marque/4.png" alt=" ">
+            </div>
+        </section> -->
+    </main>
+
+    <footer>
+        <div class="bloc ">
+            <h3>Contactez-nous</h3>
+            <div class="rs">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+                <br>contact@gmail.com <br><br>+221 77 345 54 25 <br><br>+221 332 23 45 64
+            </div>
+        </div>
+        <div class="bloc ">
+            <h3>Acces rapide</h3>
+            <a href="#">Accueil</a>
+            <a href="#">Qui sommes-nous</a>
+            <a href="#">Nos produits</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="bloc ">
+            <h3>A propos de l'entreprise</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="./assets/logo1.png " alt=" " class="logo ">
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="./js/main.js "></script>
+</body>
+
+</html>
